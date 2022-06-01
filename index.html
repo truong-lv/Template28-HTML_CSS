@@ -7,36 +7,132 @@
     <title>Template 28</title>
     <link rel="stylesheet" href="./css/reset.css"/>
     <link rel="stylesheet" href="./css/home.css"/>
+    <link rel="stylesheet" href="./css/slider.css"/>
 </head>
 <body>
     <div class="container">
-        <div class="intro">
+        <header class="intro header">
             <div class="intro--branch">
-                <p class="branch-name">Deal Asphalt</p>
-                <p class="branch-year">Asphalt Paving Since 1979</p>
+                <strong class="branch-name"><span class="theme-color">Deal</span> Asphalt</strong>
+                <p class="branch-year">-- Asphalt Paving Since 1979 --</p>
             </div>
             <div class="intro--contact">
-                <p class="branch-name">Spartanburg Office: (864) 473-0194</p>
-                <p class="branch-year">Charlotte Office: (704) 719-1668</p>
+                <p class="branch-spartanburg">Spartanburg Office: <span class="theme-color">(864) 473-0194</span></p>
+                <p class="branch-charlotte">Charlotte Office: <span class="theme-color">(704) 719-1668</span></p>
             </div>
-        </div>
+        </header>
         <nav class="navbar">
             <ul class="navbar--list">
-                <li class="narbar--list_item">HOME</li>
-                <li class="narbar--list_item">ASPHALTPAVING</li>
-                <li class="narbar--list_item">SEALCOATING</li>
-                <li class="narbar--list_item">ASPHALTPACHING
-                    <ul style="display: none">
-                        <li class="item--child">INSERT YOUR LINK RIGHT HERE</li>
-                        <li class="item--child">HOVER LINK RIGHT HERE</li>
-                        <li class="item--child">DUMMY LINK HERE</li>
+                <li class="navbar--list__item active"><a href="#">HOME</a></li>
+                <li class="navbar--list__item"><a href="#">ASPHALTPAVING</a></li>
+                <li class="navbar--list__item"><a href="#">SEALCOATING</a></li>
+                <li class="navbar--list__item subnav">
+                    <a href="#">ASPHALTPACHING</a>
+                    <ul class="dropdown-menu">
+                        <li class="item--child"><a href="#">INSERT YOUR LINK RIGHT HERE</a></li>
+                        <li class="item--child"><a href="#">HOVER LINK RIGHT HERE</a></li>
+                        <li class="item--child"><a href="#">DUMMY LINK HERE</a></li>
                     </ul>
                 </li>
-                <li class="narbar--list_item">STRIPING</li>
-                <li class="narbar--list_item">CONTACT</li>
-                <li class="narbar--list_item">LINKS</li>
+                <li class="navbar--list__item"><a href="#">STRIPING</a></li>
+                <li class="navbar--list__item"><a href="#">CONTACT</a></li>
+                <li class="navbar--list__item"><a href="#">LINKS</a></li>
+                <li class="navbar--list__item"></li>
             </ul>
         </nav>
+        <div class="main">
+            <div class="main--content">
+                <div class="main--content__banner">
+                    <div class="slideshow-container">
+                        <div class="mySlider fade">
+                          <img src="./asset/image/banner1.png" style="width:100%; max-height: 260px;" />
+                          <div class="text">Caption Text</div>
+                        </div>
+                        <div class="mySlider fade">
+                          <img src="./asset/image/featured1.png" style="width:100%; max-height: 260px;" />
+                          <div class="text">Caption Two</div>
+                        </div>
+                        <div class="mySlider fade">
+                          <img src="./asset/image/featured2.png" style="width:100%; max-height: 260px;" />
+                          <div class="text">Caption Three</div>
+                        </div>
+                      </div>
+                      <div class="slider-controll" style="text-align:center">
+                        <span class="dot" onclick="currentSlider(1)"></span>
+                        <span class="dot" onclick="currentSlider(2)"></span>
+                        <span class="dot" onclick="currentSlider(3)"></span>
+                      </div>
+                </div>
+                <div class="main--content__text">
+                    <h4 class="text__title">Welcome to Deal Asphalt</h4></br>
+                    <p>At Deal Asphalt Inc. we provide a quality company, our customers can trust. Depending on your asphalt needs, we have crews that are trained and experienced, to do the job right.
+                    </br></br></br>
+                        Deal Asphalt Inc. is a licensed general paving contractor located in Charlotte North Carolina. We specialize in parking lot maintenance, sealcoating, and patching cracked asphalt. Our main focus is in Charlotte & Spartanburg but are open to travel within S.C. and the southern border of N.C. Just some of the cities we have worked in that involved traveling. N.C. areas - Asheville, Brevard, Charlotte, Denver, Gastonia, Hendersonville, Indian Trail, Monroe, Shelby, Tryon, Union, Waxhaw. S.C. areas - Anderson, Chester, Clemson, Clinton, Columbia, Gaffney, Greenwood, Greenville, Inman, Landrum, Myrtle Beach, Pickens, Spartanburg.</br></br></br>
+                        For almost 30 years we have supplied quality asphalt services to the Carolinas. Our staff offers excellent paving and sealcoating services for residents to commercial businesses. Whether its a subdivision, parking lot, driveway, tennis court, golf cart path or walking path our crews are experienced to handle any project no matter what the size.</br></br></br>
+                        If you have been looking for one asphalt contractor that is licensed and insured and can handle all of your work out of town, then look no further. <strong class="theme-color">Call us today (704) 719-1668 / (864) 473-0194 to schedule an appointment with a free estimate.</strong>
+                    </p>
+                </div>
+            </div>
+            <div class="main--info">
+                <div class="main--info__contact">
+                    <p class="title">Contact Deal Asphalt</p>
+                    <p class="contact-item charlotte">Charlotte Office: <br>
+                    Office:<span class="theme-color">(704) 719-1668</span></p>
+                    
+                    <p class="contact-item spartanburg">Spartanburg Office: <br>
+                    Office:<span class="theme-color">(864) 473-0194</span></p>
+
+                    <button class="btn-send-message">SEND US A MESSAGE</button>
+                </div>
+
+                <div class="main--info__featured">
+                    <div class="card-container">
+                        <div class="card-img">
+                            <img class="img-style" src="./asset/image/featured1.png"/>
+                        </div>
+                        <div class="card-caption">
+                            Asphalt Patching & Paving
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card-img">
+                            <img class="img-style" src="./asset/image/featured2.png"/>
+                        </div>
+                        <div class="card-caption">
+                            Line Striping(Pavement Marking)
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card-img">
+                            <img class="img-style" src="./asset/image/featured3.png"/>
+                        </div>
+                        <div class="card-caption">
+                            Seal Coating
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="copy-right">
+                <p>Copyright &copy;2012 Deal Asphalt. All rights reserved.</p>
+            </div>
+            <div class="nav-footer">
+                <ul class="list">
+                    <li class="list__item"><a href="#">Home</a></li>
+                    <li class="list__item"><a href="#">Asphaltpaving</a></li>
+                    <li class="list__item"><a href="#">Sealcoating</a></li>
+                    <li class="list__item"><a href="#">Asphaltpaching</a></li>
+                    <li class="list__item"><a href="#">Striping</a></li>
+                    <li class="list__item"><a href="#">Contact</a></li>
+                    <li class="list__item"><a href="#">Links</a></li>
+                </ul>
+            </div>
+        </footer>
     </div>
+
+    
+
+    <script src="./script/mySlider/slider.js"></script>
 </body>
 </html>

@@ -1,0 +1,22 @@
+@use "variable" as v;
+
+.footer{
+    display:flex;
+    background-color: v.$light-dark-color;
+    padding:16px 18px;
+    font-weight: 400;
+    margin: 18px 0 0 0;
+    font-size:11px;
+    justify-content:space-between;
+    .nav-footer>.list{
+        list-style-type: none;
+        display:flex;
+        .list__item{
+            margin: 0 15px;
+            &>a{
+                text-decoration: none;
+                color: v.$dark-color;
+            }
+        }
+    }
+}

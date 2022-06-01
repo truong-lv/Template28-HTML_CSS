@@ -1,5 +1,8 @@
-body{
-    background-color:rgb(211, 211, 211)
-}
 
+
+@use "variable";
+@use "container";
 @use "header";
+@use "nav";
+@use "main";
+@use "footer";

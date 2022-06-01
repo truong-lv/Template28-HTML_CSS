@@ -1,0 +1,12 @@
+.container {
+  width: 960px;
+  max-width: 960px;
+  background-color: #FFFFFF;
+  padding: 25px;
+  font-family: Arial, Arial, sans-serif;
+}
+.container .theme-color {
+  color: #ec693b;
+}
+
+/*# sourceMappingURL=container.css.map */

@@ -1,0 +1,72 @@
+@use "variable" as v;
+
+.navbar{
+    margin:24px 0;
+    &--list{
+        list-style-type: none;
+        font-size:13px;
+        display:flex;
+        border-radius: 5px;
+        &__item{
+            background: linear-gradient(to bottom, rgba(v.$theme-color,0.8) 50%, v.$theme-color 50%);
+            padding:15px 25px;
+            border-right: 2px solid #f6b29b;
+            cursor: pointer;
+            a{
+                text-decoration:none;
+                color:#FFFFFF;
+            }
+            &:hover{
+                background: v.$dark-color;
+            }
+
+
+            &.subnav{
+                position: relative;
+                
+                .dropdown-menu{
+                    list-style-type: none;
+                    display: none;
+                    position: absolute;
+                    padding: 8px 13px;
+                    top:100%;
+                    left: 0;
+                    z-index: 9999;
+                    background-color:v.$light-dark-color;
+                    font-size: 14px;
+                    width: 150%;
+                    li{
+                        padding: 8px 0;
+                        width: 100%;
+                        
+    
+                        &>a{
+                            line-height:10px;
+                            color: #000;
+
+                            
+                        }
+                        
+                        &:hover a{
+                            color:v.$theme-color;
+                        }
+                    }
+                    li+li{
+                        border-top: 1px solid v.$mute-text-color;
+                    }
+                }
+                &:hover .dropdown-menu{
+                    display: block;
+                }
+            }
+        }
+
+        &__item.active{
+            background: linear-gradient(to bottom, rgba(v.$dark-color,0.8) 50%, v.$dark-color 50%);
+        }
+
+        
+    }
+
+
+}

@@ -1,0 +1,17 @@
+@use "variable";
+
+.intro{
+    display:flex;
+    justify-content: space-between;
+    font-weight:bold;
+    .branch-name{
+        font-size:33px;
+    }
+    .branch-year{
+        font-size:11px;
+    }
+
+    &--contact{
+        font-size:16px;
+    }
+}

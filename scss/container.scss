@@ -1,0 +1,13 @@
+@use "variable" as v;
+
+.container{
+    width:960px;
+    max-width: 960px;
+    background-color:#FFFFFF;
+    padding:25px;
+    font-family: v.$font-text;
+
+    .theme-color{
+        color:v.$theme-color;
+    }
+}
