@@ -16,7 +16,7 @@
                 text-decoration:none;
                 color:#FFFFFF;
             }
-            &:hover{
+            &:hover:not(.none-hover){
                 background: v.$dark-color;
             }
 

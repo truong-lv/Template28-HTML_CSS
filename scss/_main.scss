@@ -68,13 +68,17 @@
             .img-style{
                 width:100%; 
                 max-height: 112px;
+                border-radius: 5px 5px 0 0;
             }
             .card-caption{
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
                 background-color:v.$dark-color;
                 text-align:center;
                 font-size: 14px;
                 border-radius: 0 0 5px 5px;
-                padding: 9px 25px;
+                padding: 9px;
                 color: v.$light-color;
             }
         }
