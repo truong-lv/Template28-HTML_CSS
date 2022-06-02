@@ -4,34 +4,38 @@
     display:flex;
     justify-content: space-between;
     font-weight:bold;
-    text-align:center;
-    .branch-name{
-        font-size:33px;
-    }
-    .branch-year{
-        font-size:11px;
-        position: relative;
-        &::before{
-            content:'';
-            width:10%;
-            left: 7px;
-            top:5px;
-            position:absolute;
-            display:block;
-            border-bottom: 1px solid v.$dark-color;
-
+    
+    &--branch{
+        text-align:center;
+        .branch-name{
+            font-size:33px;
         }
-        &::after{
-            content:'';
-            width:10%;
-            right: 7px;
-            top:5px;
-            position:absolute;
-            display:block;
-            border-bottom: 1px solid v.$dark-color;
-
+        .branch-year{
+            font-size:11px;
+            position: relative;
+            &::before{
+                content:'';
+                width:10%;
+                left: 7px;
+                top:5px;
+                position:absolute;
+                display:block;
+                border-bottom: 1px solid v.$dark-color;
+    
+            }
+            &::after{
+                content:'';
+                width:10%;
+                right: 7px;
+                top:5px;
+                position:absolute;
+                display:block;
+                border-bottom: 1px solid v.$dark-color;
+    
+            }
         }
     }
+    
 
     &--contact{
         font-size:16px;

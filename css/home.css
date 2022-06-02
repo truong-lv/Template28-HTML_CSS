@@ -12,16 +12,18 @@
   display: flex;
   justify-content: space-between;
   font-weight: bold;
+}
+.intro--branch {
   text-align: center;
 }
-.intro .branch-name {
+.intro--branch .branch-name {
   font-size: 33px;
 }
-.intro .branch-year {
+.intro--branch .branch-year {
   font-size: 11px;
   position: relative;
 }
-.intro .branch-year::before {
+.intro--branch .branch-year::before {
   content: "";
   width: 10%;
   left: 7px;
@@ -30,7 +32,7 @@
   display: block;
   border-bottom: 1px solid #131211;
 }
-.intro .branch-year::after {
+.intro--branch .branch-year::after {
   content: "";
   width: 10%;
   right: 7px;
