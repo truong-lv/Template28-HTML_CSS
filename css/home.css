@@ -132,7 +132,7 @@
   border-radius: 8px;
   cursor: pointer;
 }
-.main--info__contact :hover {
+.main--info__contact .btn-send-message:hover {
   background: #3f3c38;
 }
 .main--info__featured .card-container {
